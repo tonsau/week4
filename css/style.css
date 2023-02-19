@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    position: relative;
+    animation: esimene;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes esimene {
+    0% {top: -250px}
+    100% {top: 0px}
+}
+
+
+#yellow {
+    background-color: yellow;
+    position: relative;   
+    animation: teine;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes teine {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+#green {
+    background-color: green;
+    position: relative;
+    animation: kolmas;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kolmas {
+    0% {rotate: 0 1 0 0deg}
+    100% {rotate: 0 1 0 180deg}
+}
